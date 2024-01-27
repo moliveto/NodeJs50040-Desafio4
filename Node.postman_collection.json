@@ -1,0 +1,531 @@
+{
+	"info": {
+		"_postman_id": "a5a44b7e-6bc4-459d-84e9-b979565f8dde",
+		"name": "Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18842147",
+		"_collection_link": "https://orange-shadow-239836.postman.co/workspace/Travcoding~7bc76bac-e3f8-4f9b-85a6-ce1a16a3eb5d/collection/18842147-a5a44b7e-6bc4-459d-84e9-b979565f8dde?action=share&source=collection_link&creator=18842147"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "722"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2d2-rd2eKjG5qJIU/x8kHC+6YUzfvL4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jan 2024 21:28:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"title\": \"Producto prueba 1\",\n        \"description\": \"Este es un producto prueba 1\",\n        \"price\": 100,\n        \"thumbnail\": \"Sin imagen\",\n        \"code\": \"abc123\",\n        \"stock\": 10,\n        \"id\": 1\n    },\n    {\n        \"title\": \"Producto prueba 2\",\n        \"description\": \"Este es un producto prueba 2\",\n        \"price\": 120,\n        \"thumbnail\": \"Sin imagen\",\n        \"code\": \"321\",\n        \"stock\": 10,\n        \"id\": 2\n    },\n    {\n        \"title\": \"Producto prueba 3\",\n        \"description\": \"Este es un producto prueba 3\",\n        \"price\": 120,\n        \"thumbnail\": \"Sin imagen\",\n        \"code\": \"123\",\n        \"stock\": 10,\n        \"id\": 3\n    },\n    {\n        \"title\": \"Producto prueba 4\",\n        \"description\": \"Este es un producto prueba 4\",\n        \"price\": 120,\n        \"thumbnail\": \"Sin imagen\",\n        \"code\": \"1234\",\n        \"stock\": 10,\n        \"id\": 4\n    },\n    {\n        \"title\": \"Producto prueba 5\",\n        \"description\": \"Este es un producto prueba 5\",\n        \"price\": 120,\n        \"thumbnail\": \"Sin imagen\",\n        \"code\": \"12345\",\n        \"stock\": 10,\n        \"id\": 5\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "145"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"91-3sdcOo0i0ugP+pMalsAeJoE3Ph4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jan 2024 21:29:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"Producto prueba 1\",\n    \"description\": \"Este es un producto prueba 1\",\n    \"price\": 100,\n    \"thumbnail\": \"Sin imagen\",\n    \"code\": \"abc123\",\n    \"stock\": 10,\n    \"id\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "Post Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Producto prueba 8\",\r\n    \"description\": \"Este es un producto prueba 8\",\r\n    \"price\": 100,\r\n    \"code\": \"8\",\r\n    \"stock\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Post Add Product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Producto prueba 8\",\r\n    \"description\": \"Este es un producto prueba 8\",\r\n    \"price\": 100,\r\n    \"code\": \"8\",\r\n    \"stock\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/products",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "177"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b1-9C/sL3mD2l0PF8BYzitvLuLmsRI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jan 2024 21:33:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"message\": \"product added\",\n    \"product\": {\n        \"title\": \"Producto prueba 8\",\n        \"description\": \"Este es un producto prueba 8\",\n        \"price\": 100,\n        \"code\": \"8\",\n        \"stock\": 10,\n        \"id\": 6,\n        \"status\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Put Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Producto prueba 6\",\r\n    \"description\": \"Este es un producto prueba 6\",\r\n    \"price\": 150,\r\n    \"stock\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/products/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Put Update Product",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Producto prueba 6\",\r\n    \"description\": \"Este es un producto prueba 6\",\r\n    \"price\": 150,\r\n    \"stock\": 15\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/products/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "179"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b3-3Yhpp6seONzvVsb/w1fAHQP9WiM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jan 2024 21:42:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"message\": \"product updated\",\n    \"product\": {\n        \"title\": \"Producto prueba 6\",\n        \"description\": \"Este es un producto prueba 6\",\n        \"price\": 150,\n        \"code\": \"8\",\n        \"stock\": 15,\n        \"id\": 6,\n        \"status\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Del Remove Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/products/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Del Remove Product",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/products/6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "39"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27-rS9LtQ3JkOmTpM9U2HLDhjGA21s\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jan 2024 21:46:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"message\": \"product deleted\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Post Add Cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\" : [1,2],\r\n    \"quantity\" : 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/carts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"carts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Post Add Cart",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"products\" : [1,2],\r\n    \"quantity\" : 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/carts",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"carts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "83"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"53-ryVDBiWFgmXryOqnJ2ibRUJGLrc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 27 Jan 2024 22:24:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ok\": true,\n    \"message\": \"cart added\",\n    \"product\": {\n        \"products\": [\n            1,\n            2\n        ],\n        \"quantity\": 1,\n        \"id\": 1\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
